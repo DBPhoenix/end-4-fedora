@@ -53,7 +53,6 @@ v add_external_repos || return 1 # Stop if the user chose not to add repos
 # This is necessary for local dependencies that are required by other local packages.
 install-local-spec() {
   local location=$1
-  local installflags=$2
 
   # Download required sources
   x spectool -g -R "$location"
@@ -67,7 +66,7 @@ install-local-spec() {
   local rpm_file=$(find "$HOME/rpmbuild/RPMS" -name "${rpm_name}-*.rpm" | head -n 1)
 
   # Install the built package
-  x sudo dnf install $installflags "$rpm_file"
+  x sudo dnf install -y "$rpm_file"
 }
 
 # RPM build dependencies for RPM specifications
@@ -83,9 +82,8 @@ metapkgs+=(./dist-fedora/illogical-impulse-microtex-git.spec)
   metapkgs+=(./dist-fedora/illogical-impulse-bibata-modern-classic-bin.spec)
 
 for i in "${metapkgs[@]}"; do
-  metainstallflags=""
-  $ask && showfun install-local-spec || metainstallflags="$metainstallflags --noconfirm"
-  v install-local-spec "$i" "$metainstallflags"
+  $ask && showfun install-local-spec
+  v install-local-spec "$i"
 done
 
 ## Optional dependencies
