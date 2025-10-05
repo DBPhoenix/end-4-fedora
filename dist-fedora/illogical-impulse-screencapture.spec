@@ -17,3 +17,5 @@ Requires:       wf-recorder
 This is a metapackage that installs the necessary dependencies for Illogical Impulse Screenshot and Recording.
 
 %files
+
+%autochangelog

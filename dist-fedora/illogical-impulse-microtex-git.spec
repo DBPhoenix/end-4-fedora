@@ -45,3 +45,5 @@ cp -r build/res %{buildroot}/opt/%{_pkgname}/
 %license LICENSE
 /opt/%{_pkgname}/LaTeX
 /opt/%{_pkgname}/res
+
+%autochangelog

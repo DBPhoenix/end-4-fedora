@@ -16,3 +16,5 @@ Requires:       playerctl
 This is a metapackage that installs the necessary dependencies for Illogical Impulse Audio.
 
 %files
+
+%autochangelog

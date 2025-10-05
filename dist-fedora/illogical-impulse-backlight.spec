@@ -14,3 +14,5 @@ Requires:       ddcutil
 This is a metapackage that installs the necessary dependencies for Illogical Impulse Backlight.
 
 %files
+
+%autochangelog

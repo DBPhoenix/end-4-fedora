@@ -29,3 +29,5 @@ cp -r breeze-plus %{buildroot}%{_datadir}/icons/
 %license LICENSE
 %{_datadir}/icons/breeze-plus-dark
 %{_datadir}/icons/breeze-plus
+
+%autochangelog

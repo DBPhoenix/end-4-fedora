@@ -32,3 +32,5 @@ cp -dr --no-preserve=mode OneUI-light %{buildroot}%{_datadir}/icons/
 %{_datadir}/icons/OneUI
 %{_datadir}/icons/OneUI-dark
 %{_datadir}/icons/OneUI-light
+
+%autochangelog

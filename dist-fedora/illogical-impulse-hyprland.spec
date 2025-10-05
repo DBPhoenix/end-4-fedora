@@ -25,3 +25,4 @@ This is a metapackage that installs the necessary dependencies for Illogical Imp
 
 %files
 
+%autochangelog
