@@ -56,7 +56,7 @@ install-local-spec() {
   local installflags=$2
 
   # Download required sources
-  x spectool -g "$location"
+  x spectool -g -R "$location"
   # Install build dependencies for the spec file
   x sudo dnf builddep -y "$location"
   # Build the binary RPM
