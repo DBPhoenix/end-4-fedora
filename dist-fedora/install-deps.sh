@@ -55,6 +55,8 @@ install-local-spec() {
   local location=$1
   local installflags=$2
 
+  # Download required sources
+  v spectool -g "$location"
   # Install build dependencies for the spec file
   x sudo dnf builddep -y "$location"
   # Build the binary RPM
@@ -69,7 +71,7 @@ install-local-spec() {
 }
 
 # RPM build dependencies for RPM specifications
-v sudo dnf install -y rpm-build
+v sudo dnf install -y rpm-build rpmdevtools
 
 # Install core dependencies from the meta-packages
 metapkgs=(./dist-fedora/dependencies/breeze-plus.spec)
