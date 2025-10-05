@@ -7,7 +7,7 @@ License:        LGPL-2.1-only
 URL:            https://github.com/mjkim0727/breeze-plus
 BuildArch:      noarch
 
-Source0:        %{url}/archive/refs/tags/%{version}.tar.gz
+Source0:        %{url}/archive/refs/tags/%{name}-%{version}.tar.gz
 
 Requires:       breeze-icon-theme
 
