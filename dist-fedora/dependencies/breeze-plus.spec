@@ -7,7 +7,7 @@ License:        LGPL-2.1-only
 URL:            https://github.com/mjkim0727/breeze-plus
 BuildArch:      noarch
 
-Source0:        %{url}/archive/refs/tags/%{name}-%{version}.tar.gz
+Source0:        %{url}/archive/refs/tags/%{version}.tar.gz
 
 Requires:       breeze-icon-theme
 
@@ -15,7 +15,7 @@ Requires:       breeze-icon-theme
 Breeze Plus is a fork of the KDE Breeze icon theme, providing a light and a dark variant with more colorful and vibrant folder icons.
 
 %prep
-%setup -q -n breeze-plus-%{version}
+%autosetup
 
 %build
 
