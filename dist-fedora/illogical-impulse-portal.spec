@@ -15,5 +15,3 @@ Requires:       xdg-desktop-portal-hyprland
 This is a metapackage that installs the necessary dependencies for XDG Desktop Portals.
 
 %files
-
-%autochangelog

@@ -24,5 +24,3 @@ Requires:       wl-clipboard
 This is a metapackage that installs the necessary dependencies for Illogical Impulse Hyprland.
 
 %files
-
-%autochangelog

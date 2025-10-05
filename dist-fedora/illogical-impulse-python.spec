@@ -20,5 +20,3 @@ Requires:       python3-opencv
 This is a metapackage that installs the necessary dependencies for Illogical Impulse Python.
 
 %files
-
-%autochangelog

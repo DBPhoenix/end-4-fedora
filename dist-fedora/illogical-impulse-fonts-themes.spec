@@ -41,5 +41,3 @@ Requires:       twitter-twemoji-fonts
 This is a metapackage that installs the necessary dependencies for Illogical Impulse Font and Theming.
 
 %files
-
-%autochangelog

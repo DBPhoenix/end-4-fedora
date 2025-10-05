@@ -22,5 +22,3 @@ Requires:       wlogout
 This is a metapackage that installs the necessary dependencies for Illogical Impulse Widget.
 
 %files
-
-%autochangelog

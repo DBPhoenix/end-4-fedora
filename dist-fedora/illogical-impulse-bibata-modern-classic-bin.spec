@@ -31,5 +31,3 @@ cp -dr --no-preserve=mode ./%{_variant} %{buildroot}%{_datadir}/icons/
 %files
 %license LICENSE
 %{_datadir}/icons/%{_variant}
-
-%autochangelog

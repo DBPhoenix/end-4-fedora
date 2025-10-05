@@ -23,5 +23,3 @@ Requires:       xdg-user-dirs
 This is a metapackage that installs the necessary dependencies for Illogical Impulse Basic.
 
 %files
-
-%autochangelog

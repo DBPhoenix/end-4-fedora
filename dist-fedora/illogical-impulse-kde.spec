@@ -18,5 +18,3 @@ Requires:       systemsettings
 This is a metapackage that installs the necessary dependencies for Illogical Impulse KDE.
 
 %files
-
-%autochangelog
