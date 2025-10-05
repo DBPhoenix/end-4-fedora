@@ -69,7 +69,7 @@ install-local-spec() {
 }
 
 # RPM build dependencies for RPM specifications
-x sudo dnf install rpm-build -y --needed
+x sudo dnf install -y --needed rpm-build
 
 # Install core dependencies from the meta-packages
 metapkgs=(./dist-fedora/dependencies/breeze-plus.spec)
