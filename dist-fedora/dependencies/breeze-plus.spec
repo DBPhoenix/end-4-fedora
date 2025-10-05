@@ -21,8 +21,8 @@ Breeze Plus is a fork of the KDE Breeze icon theme, providing a light and a dark
 
 %install
 install -dm755 %{buildroot}%{_datadir}/icons
-cp -r breeze-plus-dark %{buildroot}%{_datadir}/icons/
-cp -r breeze-plus %{buildroot}%{_datadir}/icons/
+cp -r breeze-plus-%{version}/src/breeze-plus-dark %{buildroot}%{_datadir}/icons/
+cp -r breeze-plus-%{version}/src/breeze-plus %{buildroot}%{_datadir}/icons/
 
 %files
 # List the files and directories owned by this package
