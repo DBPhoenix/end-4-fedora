@@ -69,7 +69,7 @@ install-local-spec() {
 }
 
 # RPM build dependencies for RPM specifications
-x sudo dnf install -y --needed rpm-build
+v sudo dnf install -y rpm-build
 
 # Install core dependencies from the meta-packages
 metapkgs=(./dist-fedora/dependencies/breeze-plus.spec)
@@ -81,7 +81,7 @@ metapkgs+=(./dist-fedora/illogical-impulse-microtex-git.spec)
   metapkgs+=(./dist-fedora/illogical-impulse-bibata-modern-classic-bin.spec)
 
 for i in "${metapkgs[@]}"; do
-  metainstallflags="--needed"
+  metainstallflags=""
   $ask && showfun install-local-spec || metainstallflags="$metainstallflags --noconfirm"
   v install-local-spec "$i" "$metainstallflags"
 done
@@ -100,7 +100,7 @@ case $SKIP_PLASMAINTG in
       p=y
     fi
     case $p in
-      y) x sudo dnf install -y --needed plasma-browser-integration ;;
+      y) x sudo dnf install -y plasma-browser-integration ;;
       *) echo "Ok, won't install"
     esac
     ;;
