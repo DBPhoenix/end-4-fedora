@@ -58,7 +58,7 @@ install-local-spec() {
   # Install build dependencies for the spec file
   x sudo dnf builddep -y "$location"
   # Build the binary RPM
-  x rpmbuild -bb "$location"
+  x rpmbuild -bb --without source_date_epoch_from_changelog "$location"
 
   # Find the RPM we just built. We query the spec file to get the exact name.
   local rpm_name=$(basename "$location" .spec)
