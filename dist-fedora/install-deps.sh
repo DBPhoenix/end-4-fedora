@@ -28,7 +28,7 @@ add_external_repos(){
     x sudo dnf copr enable -y "$copr"
   done
 
-  x sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_42/home:luisbocanegra.repo
+  x sudo config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_42/home:luisbocanegra.repo
 }
 
 #####################################################################################
