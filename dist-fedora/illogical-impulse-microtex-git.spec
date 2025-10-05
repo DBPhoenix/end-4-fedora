@@ -29,7 +29,7 @@ Requires:       cairomm
 MicroTeX for illogical-impulse dotfiles. A dynamic, cross-platform, and embeddable LaTeX rendering library.
 
 %prep
-%setup -q -n %{_pkgname}-%{commit}
+%autosetup
 
 sed -i 's/gtksourceviewmm-3.0/gtksourceviewmm-4.0/' CMakeLists.txt
 

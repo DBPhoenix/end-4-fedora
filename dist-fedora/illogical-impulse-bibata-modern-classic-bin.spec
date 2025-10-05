@@ -19,7 +19,7 @@ Conflicts:      bibata-cursor-theme-bin
 This package provides the Bibata-Modern-Classic variant for the illogical-impulse dotfiles setup.
 
 %prep
-%setup -q -n %{_variant}
+%autosetup
 
 %build
 # No build steps are necessary for this package.

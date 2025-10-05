@@ -17,7 +17,7 @@ Source0:        %{url}/archive/%{commit}/%{_pkgname}-%{commit}.tar.gz
 A fork of the OneUI4-Icons theme, packaged for the illogical-impulse dotfiles setup.
 
 %prep
-%setup -q -n %{_pkgname}-%{commit}
+%autosetup
 
 %build
 
