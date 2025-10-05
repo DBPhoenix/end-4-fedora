@@ -26,7 +26,7 @@ This package provides the Bibata-Modern-Classic variant for the illogical-impuls
 
 %install
 install -dm755 %{buildroot}%{_datadir}/icons
-cp -dr --no-preserve=mode ./%{_variant} %{buildroot}%{_datadir}/icons/
+cp -dr --no-preserve=mode ./%{_variant} %{buildroot}%{_datadir}/icons/ # TODO: causes build errors
 
 %files
 %license LICENSE

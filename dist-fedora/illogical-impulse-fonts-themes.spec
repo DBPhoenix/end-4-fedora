@@ -21,19 +21,19 @@ Requires:       kde-material-you-colors
 Requires:       matugen
 
 # Shell and Utilities
-Requires:       eza
+Requires:       eza # TODO: missing from dnf
 Requires:       fish
-Requires:       starship
+Requires:       starship # TODO: missing from dnf
 Requires:       kitty
 Requires:       fontconfig
 
 # Fonts
-Requires:       space-grotesk-fonts
-Requires:       google-gabarito-fonts
+Requires:       space-grotesk-fonts # TODO: missing from dnf
+Requires:       google-gabarito-fonts # TODO: missing from dnf
 # coprs/che/nerd-fonts
-Requires:       jetbrains-mono-nerd-fonts
-Requires:       material-symbols-fonts
-Requires:       google-readex-pro-fonts
+Requires:       jetbrains-mono-nerd-fonts # TODO: missing from dnf
+Requires:       material-symbols-fonts # TODO: missing from dnf
+Requires:       google-readex-pro-fonts # TODO: missing from dnf
 Requires:       google-rubik-fonts
 Requires:       twitter-twemoji-fonts
 

@@ -12,7 +12,7 @@ Requires:       NetworkManager
 Requires:       plasma-nm
 Requires:       polkit-kde
 Requires:       dolphin
-Requires:       systemsettings
+Requires:       systemsettings # TODO: missing from dnf
 
 %description
 This is a metapackage that installs the necessary dependencies for Illogical Impulse KDE.

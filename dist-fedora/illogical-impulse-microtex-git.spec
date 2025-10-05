@@ -17,7 +17,7 @@ BuildRequires:  cmake
 BuildRequires:  gcc-c++
 BuildRequires:  tinyxml2-devel
 BuildRequires:  gtkmm30-devel
-BuildRequires:  gtksourceviewmm4-devel
+BuildRequires:  gtksourceviewmm4-devel # TODO: missing from dnf
 BuildRequires:  cairomm-devel
 
 Requires:       tinyxml2

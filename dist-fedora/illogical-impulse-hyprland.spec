@@ -16,7 +16,7 @@ Requires:       hyprlock
 Requires:       hyprpicker
 Requires:       hyprsunset
 Requires:       hyprutils
-Requires:       hyprwayland-scanner
+Requires:       hyprwayland-scanner # TODO: missing from dnf
 Requires:       xdg-desktop-portal-hyprland
 Requires:       wl-clipboard
 
